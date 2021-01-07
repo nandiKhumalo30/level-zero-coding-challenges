@@ -1,4 +1,4 @@
-function printVariable(){
+function taskOne(){
     var x = 0
     var y = 1
     console.log(x)
@@ -8,9 +8,9 @@ function printVariable(){
     console.log(x)
     console.log(y)
 }
-printVariable()
+taskOne()
 
-function bODMAS(){
+function taskTwo(){
     var x = 1 + 1 * 2
     var y = (1 + 1) * 2
     var z = 1 + (1 * 2)
@@ -18,64 +18,73 @@ function bODMAS(){
     var b = (1 + 1 * 2) / 2
     console.log(x,y,z,a,b)
 }
-bODMAS()
+taskTwo()
 
-function checkForSixtyFive(a,b){
+function taskThree(a,b){
    if(a + b === 65 || a === 65 || b === 65){
-       console.log('true')
+       return true
    } else {
-       console.log('false')
+       return false
    }
 }
-checkForSixtyFive(65,65)
+taskThree(65,65)
 
-function checkForThree(a,b){
+function taskFour(a,b){
    if(a + b === 3 && (a === 3 || b === 3)){
-       console.log('true')
+       return true
    } else {
-       console.log('false')
+       return false
    } 
 }
-checkForThree(3,3)
+taskFour(3,3)
 
-function triangleArea(a,b,c){
-var s = (a + b + c)/2
-var area = Math.sqrt(s*(s-a)*(s-b)*(s-c))
+function taskFive(a,b,c){
+var semiperimeter = (a + b + c)/2
+var area = Math.sqrt(semiperimeter*(semiperimeter-a)*(semiperimeter-b)*(semiperimeter-c))
 console.log(area)
 }
-triangleArea(5,4,3)
+taskFive(5,4,3)
 
-function maxNum(a,b,c){
+function taskSix(a,b,c){
     if(a > b && a > c){
-        console.log(a)
+        return a
     } else if(b > a && b > c){
-        console.log(b)
+        return b
     } else {
-        console.log(c)
+        return c
     }
 }
-maxNum(11,22,3)
+taskSix(111,22,33)
 
-function tempInFahrenheit(celcius){
+function taskSevenTempInFahrenheit(celcius){
     let fahrenheit = (celcius * 9/5) + 32
     console.log(fahrenheit)
 }
-tempInFahrenheit(10)
+taskSevenTempInFahrenheit(10)
 
-function tempInCelcius(fahrenheit){
+function taskSevenTempInCelcius(fahrenheit){
     let celcius = (fahrenheit - 32) * 5/9
     console.log(celcius)
 }
-tempInCelcius(100)
+taskSevenTempInCelcius(100)
 
-function time(num){
+function taskEight(num){
     var minutes = num % 60
     var hours = (num - minutes) /60
-    console.log(hours + ' hours,', minutes + ' minutes')
+    if(hours === 1 && minutes === 1){
+        console.log(hours + ' hour,', minutes + ' minute') 
+    } else if(hours === 1 && minutes !== 1){
+        console.log(hours + ' hour,', minutes + ' minutes') 
+    } else if(hours !== 1 && minutes === 1){
+        console.log(hours + ' hours,', minutes + ' minute') 
+    } else {
+        console.log(hours + ' hours,', minutes + ' minutes')
+    }
+    
 }
-time(133)
+taskEight(121)
 
-function multiplesOf3and5(){
+function taskNine(){
     var sum = 0   
     for(let i = 0; i < 1000; i++){
         if(i % 3 === 0|| i % 5 === 0){
@@ -84,18 +93,18 @@ function multiplesOf3and5(){
     }
     console.log(sum)
 }
-multiplesOf3and5()
+taskNine()
 
-function vowels(str){
-    console.log(str.match(/[a,e,i,o,u]/ig))
+function taskTen(str){
+    console.log(str.match(/[a,e,i,o,u]/ig).join(','))
 }
-vowels('hello Aurora')
+taskTen('hello Aurora')
 
-function matchLetters(str, str2){
-    var re = new RegExp(`[${str2}]`, "g")
-    console.log(str.match(re))
+function taskEleven(str, str2){
+    var re = new RegExp(`[${str}]`, "g")
+    console.log(str2.match(re).join(','))
 }
-matchLetters('house', 'computers')
+taskEleven('house', 'computers')
 
 
 
