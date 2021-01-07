@@ -21,11 +21,11 @@ function taskTwo(){
 taskTwo()
 
 function taskThree(a,b){
-   if(a + b === 65 || a === 65 || b === 65){
-       return true
-   } else {
-       return false
-   }
+    if(a + b === 65 || a === 65 || b === 65){
+        return true
+    } else {
+        return false
+    }
 }
 taskThree(65,65)
 
@@ -41,9 +41,9 @@ function taskFour(a,b){
 taskFour(33,3)
 
 function taskFive(a,b,c){
-var semiperimeter = (a + b + c)/2
-var area = Math.sqrt(semiperimeter*(semiperimeter-a)*(semiperimeter-b)*(semiperimeter-c))
-return area
+    var semiperimeter = (a + b + c)/2
+    var area = Math.sqrt(semiperimeter*(semiperimeter-a)*(semiperimeter-b)*(semiperimeter-c))
+    return area
 }
 taskFive(5,4,3)
 
