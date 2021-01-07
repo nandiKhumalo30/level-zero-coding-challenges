@@ -30,13 +30,15 @@ function taskThree(a,b){
 taskThree(65,65)
 
 function taskFour(a,b){
-   if(a + b === 3 && (a === 3 || b === 3)){
-       return true
-   } else {
-       return false
-   } 
+    let sum = a + b
+    let sumSearch = sum.toString().includes('3')
+    if(sumSearch === true && (a === 3 || b === 3)){
+        console.log('true')
+    } else {
+        console.log('false')
+    } 
 }
-taskFour(3,3)
+taskFour(33,3)
 
 function taskFive(a,b,c){
 var semiperimeter = (a + b + c)/2
@@ -105,8 +107,3 @@ function taskEleven(str, str2){
     console.log(str2.match(re).join(','))
 }
 taskEleven('house', 'computers')
-
-
-
-
-
