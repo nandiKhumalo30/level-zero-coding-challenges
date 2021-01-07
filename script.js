@@ -1,4 +1,4 @@
-function taskOne(){
+function addVariables(){
     var x = 0
     var y = 1
     console.log(x)
@@ -8,9 +8,9 @@ function taskOne(){
     console.log(x)
     console.log(y)
 }
-taskOne()
+addVariables()
 
-function taskTwo(){
+function bODMAS(){
     var x = 1 + 1 * 2
     var y = (1 + 1) * 2
     var z = 1 + (1 * 2)
@@ -18,18 +18,18 @@ function taskTwo(){
     var b = (1 + 1 * 2) / 2
     console.log(x,y,z,a,b)
 }
-taskTwo()
+bODMAS()
 
-function taskThree(a,b){
+function checkForSixtyFive(a,b){
     if(a + b === 65 || a === 65 || b === 65){
         return true
     } else {
         return false
     }
 }
-taskThree(65,65)
+checkForSixtyFive(65,65)
 
-function taskFour(a,b){
+function checkForThree(a,b){
     let sum = a + b
     let sumSearch = sum.toString().includes('3')
     if(sumSearch === true && (a === 3 || b === 3)){
@@ -38,16 +38,16 @@ function taskFour(a,b){
         return true
     } 
 }
-taskFour(33,3)
+checkForThree(33,3)
 
-function taskFive(a,b,c){
+function areaOfTriangle(a,b,c){
     var semiperimeter = (a + b + c)/2
     var area = Math.sqrt(semiperimeter*(semiperimeter-a)*(semiperimeter-b)*(semiperimeter-c))
     return area
 }
-taskFive(5,4,3)
+areaOfTriangle(5,4,3)
 
-function taskSix(a,b,c){
+function findMaxNum(a,b,c){
     if(a > b && a > c){
         return a
     } else if(b > a && b > c){
@@ -56,21 +56,21 @@ function taskSix(a,b,c){
         return c
     }
 }
-taskSix(111,22,33)
+findMaxNum(111,22,33)
 
-function taskSevenTempInFahrenheit(celcius){
+function tempInFahrenheit(celcius){
     let fahrenheit = (celcius * 9/5) + 32
     return fahrenheit
 }
-taskSevenTempInFahrenheit(10)
+tempInFahrenheit(10)
 
-function taskSevenTempInCelcius(fahrenheit){
+function tempInCelcius(fahrenheit){
     let celcius = (fahrenheit - 32) * 5/9
     return celcius
 }
-taskSevenTempInCelcius(100)
+tempInCelcius(100)
 
-function taskEight(num){
+function time(num){
     var minutes = num % 60
     var hours = (num - minutes) /60
     if(hours === 1 && minutes === 1){
@@ -84,9 +84,9 @@ function taskEight(num){
     }
     
 }
-taskEight(121)
+time(121)
 
-function taskNine(){
+function sumOfMultiples(){
     var sum = 0   
     for(let i = 0; i < 1000; i++){
         if(i % 3 === 0|| i % 5 === 0){
@@ -95,15 +95,15 @@ function taskNine(){
     }
     console.log(sum)
 }
-taskNine()
+sumOfMultiples()
 
-function taskTen(str){
+function findVowels(str){
     console.log(str.match(/[a,e,i,o,u]/ig).join(','))
 }
-taskTen('hello Aurora')
+findVowels('hello Aurora')
 
-function taskEleven(str, str2){
+function findCommonCharacters(str, str2){
     var re = new RegExp(`[${str}]`, "g")
     console.log(str2.match(re).join(','))
 }
-taskEleven('house', 'computers')
+findCommonCharacters('house', 'computers')
