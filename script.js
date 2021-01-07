@@ -43,7 +43,7 @@ taskFour(33,3)
 function taskFive(a,b,c){
 var semiperimeter = (a + b + c)/2
 var area = Math.sqrt(semiperimeter*(semiperimeter-a)*(semiperimeter-b)*(semiperimeter-c))
-console.log(area)
+return area
 }
 taskFive(5,4,3)
 
