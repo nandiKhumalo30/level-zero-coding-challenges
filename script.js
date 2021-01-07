@@ -33,9 +33,9 @@ function taskFour(a,b){
     let sum = a + b
     let sumSearch = sum.toString().includes('3')
     if(sumSearch === true && (a === 3 || b === 3)){
-        console.log('true')
+        return true
     } else {
-        console.log('false')
+        return true
     } 
 }
 taskFour(33,3)
@@ -60,13 +60,13 @@ taskSix(111,22,33)
 
 function taskSevenTempInFahrenheit(celcius){
     let fahrenheit = (celcius * 9/5) + 32
-    console.log(fahrenheit)
+    return fahrenheit
 }
 taskSevenTempInFahrenheit(10)
 
 function taskSevenTempInCelcius(fahrenheit){
     let celcius = (fahrenheit - 32) * 5/9
-    console.log(celcius)
+    return celcius
 }
 taskSevenTempInCelcius(100)
 
