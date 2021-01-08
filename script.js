@@ -35,7 +35,7 @@ function checkForThree(a,b){
     if(sumSearch === true && (a === 3 || b === 3)){
         return true
     } else {
-        return true
+        return false
     } 
 }
 checkForThree(33,3)
@@ -104,6 +104,6 @@ findVowels('hello Aurora')
 
 function findCommonCharacters(str, str2){
     var re = new RegExp(`[${str}]`, "g")
-    console.log(str2.match(re).join(','))
+    console.log('Common letters:', str2.match(re).join(','))
 }
 findCommonCharacters('house', 'computers')
